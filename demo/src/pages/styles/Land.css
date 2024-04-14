@@ -1,0 +1,96 @@
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background: url('https://png.pngtree.com/background/20210717/original/pngtree-color-pencil-white-cute-cloud-cartoon-simple-background-picture-image_1433180.jpg') center/cover fixed no-repeat;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Adjusted padding value */
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Added z-index to ensure the navbar is on top */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav {
+  display: flex; /* Added display property */
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+ font-size: large;
+}
+a{
+  text-decoration: none;
+}
+.main-content {
+  text-align: center;
+  padding: 20px; /* Adjusted padding value */
+}
+
+section {
+  padding: 20px; /* Adjusted padding value */
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+section h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #555;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+.button-style{
+  padding: 10px;
+  color: #ffffff;
+  background-color: rgb(51, 149, 229);
+  border-radius: 15%;
+  font-size: large;
+}
+
+footer {
+  color: #1c0505;
+  padding: 20px; /* Adjusted padding value */
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+}
